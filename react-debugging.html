@@ -65,13 +65,19 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          //1.added JSX opening and closing tags
+          //2.Added the drawCard variable inthe the draw a card button onClick
+          //3.onClikc was not correct syntax , had to correct to onClick
+          <> 
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}> 
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
+
           <div style={handStyles}>
             {hand.map((card, index) => {
               return (
@@ -81,6 +87,8 @@
               )
             })}
           </div>
+          </>
+          
         )
       }
 
