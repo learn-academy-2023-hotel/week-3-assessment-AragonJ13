@@ -8,30 +8,31 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. What is JSX? What is one syntax difference between HTML and JSX?
 
-Your answer:
+Your answer: JSX is the HTML of React. The diffrence between the 2 is JXS you can run functions in it while HTML you cannot making it easier for the developer to execute full stack applications without having to go back and forth between HTML,CSS and the backend.
 
-Researched answer:
+Researched answer: JSX is an extension of JS and HTML is a markup language , Your able to include expressions and functions whithin the syntax.
 
 2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
 
-Your answer:
+Your answer: Yarn is a bunch of nodes that allows you to test and modify your React application. Having all the nodes in your text editor allows you to use your library to make your application smoother and more efficient.
 
-Researched answer:
+
+Researched answer: Yarn is an open source package manager used to managed dependecies in JavaScript.
 
 3. What is the difference between state values and props in React?
 
-Your answer:
+Your answer:props are like parameters and can be anything and pass info through them .State is very 3 dimentional meaning it can change during the User interaction to give the user a smotther and faster experience.
 
-Researched answer:
+Researched answer:props get passed to the component, whereas state is managed within the component . 
 
 4. STRETCH: Which is the difference between a div tag and a span tag?
 
-Researched answer:
+Researched answer:A div tag creates a block-level element while a span tag wraps around an inline element.    
 
 ## Looking Ahead: Terms for Next Week
 
-1. DOM: 
+1. DOM: Document Object Model - visual representation of code.
 
-2. Object-oriented programming:
+2. Object-oriented programming: Organizes software design around data, or objects, rather than functions and logic.
 
-3. Ruby:
+3. Ruby:It is widely used for building servers and data processing.

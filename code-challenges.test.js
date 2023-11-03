@@ -14,13 +14,47 @@
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const fibonacciLength1 = 6
-// Expected output: [1, 1, 2, 3, 5, 8]
+// const fibonacciLength1 = 6
+// // Expected output: [1, 1, 2, 3, 5, 8]
 
-const fibonacciLength2 = 10
-// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+// const fibonacciLength2 = 10
+// // Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
-// b) Create the function that makes the test pass.
+// // describe("fibByTwo", () => {
+// //   it(" takes in a number (greater than 2) and returns an array containing the Fibonacci sequence", () => {
+// //     expect(fibByTwo(fibonacciLength1)).toEqual([1, 1, 2, 3, 5, 8])
+// //     expect(fibByTwo(fibonacciLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
+// //   })
+// // })
+
+// // b) Create the function that makes the test pass.
+
+//   //Created variable fibByTwo to take in number
+// const fibByTwo = (number) => {
+//   //Created new varibale fibBegginingNum = array of the stat\rt of the fibonacci sequence which is 1,1
+//   const fibBegginingNum = [1,1]
+//   //Made a for loop which started at the Index-2 and if i is less than 2 it would add 1 
+//   for(let i=2; i < number; i++)
+//  //fibBegginingNum is gonna equal fibBegginingNum index=2-1 + fibBegginingNum index=2-2 which give the last and second to last number and starts iterrating from there.
+//   fibBegginingNum[i] = fibBegginingNum[i-1] + fibBegginingNum[i-2]
+// // Returns expected output 
+//   return fibBegginingNum
+// }
+
+// console.log(fibByTwo(fibonacciLength1))
+// console.log(fibByTwo(fibonacciLength2))
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Pseudo code:
 
@@ -28,6 +62,8 @@ const fibonacciLength2 = 10
 // Prompt: Create a function that takes in an object and returns an array of the object's values sorted from least to greatest.
 
 // a) Create a test with expect statements for each of the variables provided.
+
+
 
 const studyMinutesWeek1 = {
   sunday: 90,
@@ -51,6 +87,25 @@ const studyMinutesWeek2 = {
 }
 // Expected output: [10, 15, 20, 45, 60, 65, 100]
 
+// describe("someObjectValue", () => {
+//   it("takes in an object and returns an array of the object's values sorted from least to greatest.", () => {
+//     expect(someObjectValue(studyMinutesWeek1)).toEqual([15, 15, 20, 30, 30, 60, 90])
+//     expect(someObjectValue(studyMinutesWeek2)).toEqual([10, 15, 20, 45, 60, 65, 100])
+//   })
+// })
+
 // b) Create the function that makes the test pass.
 
+function someObjectValue(obj) {
+  // Use .values to take all the numners in th object and put them in an array
+  const values = Object.values(obj)
+
+  // using the .sort method on the values array and using the (a, b) => a - b i will sort the values from smallest to largest
+  values.sort((a, b) => a - b)
+  // This will return our expected output 
+  return values
+}
+
+console.log(someObjectValue(studyMinutesWeek1))
+console.log(someObjectValue(studyMinutesWeek2))
 // Pseudo code:
